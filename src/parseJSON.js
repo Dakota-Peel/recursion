@@ -3,5 +3,16 @@
 
 // but you're not, so you'll write it from scratch:
 var parseJSON = function(json) {
-  // your code goes here
+  var parse;
+	if(json === "[]"){
+		parse = Array(0);
+	}else{
+		
+		for(var key in json){
+			parse = {};
+		}
+
+	}
+	return parse;
 };
+
